@@ -1,0 +1,222 @@
+/*global*/
+		body,html{
+			padding: 0;
+			margin: 0;
+			font-family: 微軟正黑體;
+			background-color: #68B0AB;
+		}
+		/*有甚麼方法可以更好地調高度呢?*/
+		/*grid*/
+		.flexbox_col{
+		    display:flex;
+		    justify-content:center;
+		    flex-direction: column;
+		    align-items: center;
+		    flex-wrap:wrap;
+		    max-width:1200px;
+		    height: 500px;
+		    border:1px solid #000;
+		    margin: 0 auto;
+			padding-right: 16px;
+			padding-left: 16px;
+		}
+
+		.flexbox_row{
+		    display:flex;
+		    justify-content:center;
+		    flex-direction: row;
+		    align-items: center;
+		    flex-wrap:wrap;
+		    max-width:1200px;
+		    height: 500px;
+		    border:1px solid #000;
+		    margin: 0 auto;
+			padding-right: 16px;
+			padding-left: 16px;
+		}
+		
+		.small_row{
+			height:300px;
+		}
+
+		@media (max-width: 550px){
+			.small_row{
+				height: 420px;
+			}
+		}
+		/*@media (0px<width <400px){
+			.small_row{
+				margin-bottom: 120px;
+			}
+		}*/
+		.row{
+			margin-left: -8px;
+			margin-right: -8px;
+		}
+		
+		/*沒用到col*/
+		.col-1-1,.col-1-2,.col-1-3,.col-1-4{
+			padding-right: 8px;
+			padding-left: 8px;
+		}
+		.col-1-1{
+			width: 100%;		
+		}
+		.col-1-3{
+			width: 33.33333%;
+		}
+		.col-1-2{
+			width: 50%;
+		}
+		.col-1-4{
+			width: 25%;
+		}
+
+		@media (min-width: 480px){
+			.col-sm-1-3{
+				width: 33.33333%;
+			}
+			.col-sm-1-2{
+				width: 50%;
+			}
+		}
+		@media (min-width: 768px){
+			.col-md-1-4{
+				width: 25%;
+			}
+		}
+		
+		/*image*/
+		.imagebox{
+			/*margin-top: 50px;*/
+			width:200px;
+		    height:200px;
+		    
+		}
+		.imagebox .image{
+		    width:200px;
+		    height:200px;
+		    overflow: hidden;
+		    border-radius: 50%;
+		    /*border: 1px solid black;*/
+		}
+		.webimagebox{
+			width: 300px;
+			height: 300px;
+		}
+		.webimagebox .webimage{
+		    width:400px;
+		    height:300px;
+		    overflow: hidden;
+		    /*border-radius: 50%;*/
+		    /*border: 1px solid black;*/
+
+		}
+		/*自我介紹標題*/
+		.self-introduction{
+			font-size: 30px;
+			color: #4A7C59;
+			font-weight: 900;
+			position: relative;
+		}
+		.self-introduction:after{
+			content: "";
+			width: 80%;
+			height:3px;
+			background-color: #4A7C59;
+			display: inline-block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			margin-top: 8px;
+		}
+		
+		.school{
+			/*border:1px solid #000;*/
+			width:75%;
+			background-color: #fff;
+			padding: 20px;
+			/*padding-right: 20px;*/
+			border-radius: 10px;
+			box-shadow: 1px 1px 5px #C8D5B9;
+		}
+
+		@media (min-width: 480px){
+			.school{
+				width:80%;
+			}
+		}
+
+		/*學校經歷標題*/
+		.school-experience{
+			font-size: 30px;
+			color: #4A7C59;
+			font-weight: 900;
+			position: relative;
+		}
+		.school-experience:after{
+			content: "";
+			width: 80%;
+			height:3px;
+			background-color: #4A7C59;
+			display: inline-block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			margin-top: 8px;
+		}
+		/*timeline*/
+		.timeline{
+			width: 4px;
+			height: 300px;
+			background-color: #e88ae7;
+			margin-right: 8px;
+		}
+		/*timeline的點*/
+		.timeline:before{
+			content: '';
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			background-color: #e381a7;
+			position: absolute;
+			top: 650px;
+			transform: translateX(-40%);
+		}
+		.timeline1{
+			width: 4px;
+			height: 300px;
+			background-color: #e88ae7;
+			margin-right: 8px;
+		}
+		/*timeline的點*/
+		.timeline1:before{
+			content: '';
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			background-color: #e381a7;
+			position: absolute;
+			top: 950px;
+			transform: translateX(-40%);
+		}
+		/*work area*/
+		.work{
+			border:1px solid #000;
+			width: 400px;
+			height: 300px;
+			margin-right: 16px;
+		}
+		@media (min-width: 480px){
+			.work{
+				margin-bottom: 16px;
+			}
+		}
+		.text{
+			border:1px solid #000;
+			width: 600px;
+			text-align:center;
+			padding: 0 10px;
+		}
+
+		
